@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalonia.NavigationBug", "Avalonia.NavigationExample\Avalonia.NavigationBug.csproj", "{4E32605F-F2F0-41D0-98FE-0C98806D2EF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalonia.NavigationBug.Desktop", "Avalonia.NavigationExample.Desktop\Avalonia.NavigationBug.Desktop.csproj", "{6EA962D1-A249-4033-89D5-080043BB375B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B77E793B-1A68-41E5-AD5F-56E497A43E75}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E32605F-F2F0-41D0-98FE-0C98806D2EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E32605F-F2F0-41D0-98FE-0C98806D2EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E32605F-F2F0-41D0-98FE-0C98806D2EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E32605F-F2F0-41D0-98FE-0C98806D2EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA962D1-A249-4033-89D5-080043BB375B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA962D1-A249-4033-89D5-080043BB375B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA962D1-A249-4033-89D5-080043BB375B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA962D1-A249-4033-89D5-080043BB375B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B26C9D3E-F766-4165-8B24-1DD0267523FE}
+	EndGlobalSection
+EndGlobal

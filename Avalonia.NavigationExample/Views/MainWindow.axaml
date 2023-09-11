@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Avalonia.NavigationBug.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:Avalonia.NavigationBug.Views"
+        xmlns:viewModels="clr-namespace:Avalonia.NavigationBug.ViewModels"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="600"
+        Width="400" Height="600"
+        x:Class="Avalonia.NavigationBug.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        x:DataType="viewModels:MainWindowViewModel"
+        Title="Avalonia.NavigationBug">
+  
+  <Design.DataContext>
+    <vm:MainWindowViewModel/>
+  </Design.DataContext>
+  
+  <Grid>
+    <views:MainView />
+  </Grid>
+   
+</Window>

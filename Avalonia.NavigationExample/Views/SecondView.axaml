@@ -1,0 +1,28 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Avalonia.NavigationBug.ViewModels"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Avalonia.NavigationBug.Views.SecondView"
+             x:DataType="vm:SecondViewModel">
+  <Design.DataContext>
+    <vm:SecondViewModel/>
+  </Design.DataContext>
+  
+  <Grid RowDefinitions="*,Auto">
+    <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+      <ComboBox ItemsSource="{Binding ThemeVariants}" 
+                SelectedItem="{Binding SelectedThemeVariant}"
+                />
+    </StackPanel>
+    <Grid Grid.Row="1">
+      <Button Content="Go back" Command="{Binding GoBackCommand}"
+              HorizontalAlignment="Left"/>
+      <Button Content="Go next" Command="{Binding GoNextCommand}"
+              HorizontalAlignment="Right"/>
+    </Grid>
+  </Grid>
+</UserControl>
